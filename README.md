@@ -72,12 +72,6 @@
       text-align: center;
       margin-top: 3rem;
     }
-    .author-section img {
-      width: 200px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
     .author-section p {
       font-size: 1.1rem;
       margin-top: 0.8rem;
@@ -146,7 +140,6 @@
   </section>
 
   <section class="author-section">
-    <img src="file-F6LsU8MtTB85qCprbVvwzS" alt="Created by Javagar">
     <p>Created by Javagar</p>
   </section>
 

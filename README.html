@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples & Attractions in Namakkal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #283e51, #485563);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #4a90e2;
+      padding-left: 10px;
+      color: #2c3e50;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+      color: #2d2d2d;
+    }
+    .card-content p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    .author-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .author-section p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #f12711, #f5af19);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
 
+<header>
+  <h1>Famous Temples & Attractions in Namakkal</h1>
+</header>
+
+<main class="container">
+
+  <section>
+    <h2 class="section-title">Popular Temples</h2>
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606925797304-379f81c64c44?auto=format&fit=crop&w=800&q=80" alt="Narasimha Swamy Temple" />
+        <div class="card-content">
+          <h2>Narasimha Swamy Temple</h2>
+          <p>This temple is carved into a hillside and dedicated to Lord Narasimha. Known for its ancient architecture and spiritual significance, it's a must-visit in Namakkal.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4f56?auto=format&fit=crop&w=800&q=80" alt="Anjaneyar Temple" />
+        <div class="card-content">
+          <h2>Anjaneyar Temple</h2>
+          <p>Home to one of the tallest statues of Lord Hanuman (18 ft), this temple is open to the sky and revered by devotees seeking courage and strength.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1608992554354-2d77a3dc4e0a?auto=format&fit=crop&w=800&q=80" alt="Namakkal Fort Temple" />
+        <div class="card-content">
+          <h2>Namakkal Fort & Ranganatha Temple</h2>
+          <p>The 17th-century Namakkal Fort houses the Ranganatha Temple, known for its peaceful atmosphere and panoramic views from atop the hill.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="margin-top: 3rem;">
+    <h2 class="section-title">Kolli Hills (Kolli Malai)</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549887534-5a3a62b31c61?auto=format&fit=crop&w=800&q=80" alt="Kolli Hills" />
+        <div class="card-content">
+          <h2>Kolli Hills</h2>
+          <p>Kolli Hills, known as Kolli Malai, is a mountain range in the Eastern Ghats, famous for its 70 hairpin bends, scenic views, and the powerful Arapaleeswarar Temple. Visitors are enchanted by waterfalls like Agaya Gangai, vibrant flora, and a tranquil escape from city life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="author-section">
+    <p>Created by <span style="font-weight: bold;">Javagar</span></p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Namakkal Temple & Tourism Board. All rights reserved.
+</footer>
+
+</body>
+</html>

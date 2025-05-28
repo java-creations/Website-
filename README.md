@@ -1,155 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>World Wonders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples & Attractions in Namakkal</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fafafa;
+      background: #f2f2f2;
       margin: 0;
+      padding: 0;
       color: #333;
-      line-height: 1.6;
     }
-
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(135deg, #0d1a26, #1a3d5d);
       color: white;
-      padding: 1rem 0;
       text-align: center;
+      padding: 2rem 1rem;
     }
-
     header h1 {
+      font-size: 2.8rem;
       margin: 0;
     }
-
-    nav ul {
-      list-style: none;
-      padding: 0.5rem 0 1rem;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
     }
-
-    nav ul li a {
-      color: #ecf0f1;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #34495e;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .wonder {
-      background-color: white;
-      margin-bottom: 2rem;
-      padding: 1rem 1.5rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .wonder h2 {
-      margin-top: 0;
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #4a90e2;
+      padding-left: 10px;
       color: #2c3e50;
     }
-
-    .wonder img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      margin: 0.5rem 0 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
     }
-
-    footer {
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+      color: #2d2d2d;
+    }
+    .card-content p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    .author-section {
       text-align: center;
-      padding: 1rem 0;
-      background-color: #2c3e50;
-      color: white;
       margin-top: 3rem;
+    }
+    .author-section img {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .author-section p {
+      font-size: 1.1rem;
+      margin-top: 0.8rem;
+      color: #333;
+      font-weight: bold;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>The Seven Wonders of the World</h1>
-    <nav>
-      <ul>
-        <li><a href="#great-wall">Great Wall of China</a></li>
-        <li><a href="#petra">Petra</a></li>
-        <li><a href="#christ-redeemer">Christ the Redeemer</a></li>
-        <li><a href="#machu-picchu">Machu Picchu</a></li>
-        <li><a href="#chichen-itza">Chichen Itza</a></li>
-        <li><a href="#roman-colosseum">Roman Colosseum</a></li>
-        <li><a href="#taj-mahal">Taj Mahal</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="great-wall" class="wonder">
-      <h2>Great Wall of China</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/GreatWall_2004_Summer_4.JPG/640px-GreatWall_2004_Summer_4.JPG" alt="Great Wall of China" />
-      <p>The Great Wall of China is a series of fortifications built across the historical northern borders of China to protect against invasions.</p>
-    </section>
+<header>
+  <h1>Famous Temples & Attractions in Namakkal</h1>
+</header>
 
-    <section id="petra" class="wonder">
-      <h2>Petra</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Petra_Jordan_BW_21-09-2007_img3.jpg/640px-Petra_Jordan_BW_21-09-2007_img3.jpg" alt="Petra" />
-      <p>Petra is a historical and archaeological city famous for its rock-cut architecture and water conduit system, located in southern Jordan.</p>
-    </section>
+<main class="container">
 
-    <section id="christ-redeemer" class="wonder">
-      <h2>Christ the Redeemer</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Cristo_Redentor_-_Rio_de_Janeiro%2C_Brasil.jpg/640px-Cristo_Redentor_-_Rio_de_Janeiro%2C_Brasil.jpg" alt="Christ the Redeemer" />
-      <p>Christ the Redeemer is an iconic statue of Jesus Christ in Rio de Janeiro, Brazil, symbolizing peace and welcoming visitors with open arms.</p>
-    </section>
+  <section>
+    <h2 class="section-title">Popular Temples</h2>
+    <div class="card-grid">
 
-    <section id="machu-picchu" class="wonder">
-      <h2>Machu Picchu</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/640px-Machu_Picchu%2C_Peru.jpg" alt="Machu Picchu" />
-      <p>Machu Picchu is an ancient Incan city set high in the Andes Mountains of Peru, known for its sophisticated dry-stone construction.</p>
-    </section>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Narasimhaswamy_Temple%2C_Namakkal.jpg" alt="Narasimha Swamy Temple" />
+        <div class="card-content">
+          <h2>Narasimha Swamy Temple</h2>
+          <p>This temple is carved into a hillside and dedicated to Lord Narasimha. Known for its ancient architecture and spiritual significance, it's a must-visit in Namakkal.</p>
+        </div>
+      </div>
 
-    <section id="chichen-itza" class="wonder">
-      <h2>Chichen Itza</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chichen_Itza_3.jpg/640px-Chichen_Itza_3.jpg" alt="Chichen Itza" />
-      <p>Chichen Itza is a large pre-Columbian archaeological site built by the Maya civilization in Mexico's Yucatán Peninsula.</p>
-    </section>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Anjaneyar_Temple%2C_Namakkal.jpg" alt="Anjaneyar Temple" />
+        <div class="card-content">
+          <h2>Anjaneyar Temple</h2>
+          <p>Home to one of the tallest statues of Lord Hanuman (18 ft), this temple is open to the sky and revered by devotees seeking courage and strength.</p>
+        </div>
+      </div>
 
-    <section id="roman-colosseum" class="wonder">
-      <h2>Roman Colosseum</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/640px-Colosseo_2020.jpg" alt="Roman Colosseum" />
-      <p>The Roman Colosseum is an ancient amphitheater in Rome, Italy, famous for gladiatorial contests and public spectacles.</p>
-    </section>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Namakkal_Fort.jpg" alt="Namakkal Fort Temple" />
+        <div class="card-content">
+          <h2>Namakkal Fort & Ranganatha Temple</h2>
+          <p>The 17th-century Namakkal Fort houses the Ranganatha Temple, known for its peaceful atmosphere and panoramic views from atop the hill.</p>
+        </div>
+      </div>
 
-    <section id="taj-mahal" class="wonder">
-      <h2>Taj Mahal</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Taj-Mahal.jpg/640px-Taj-Mahal.jpg" alt="Taj Mahal" />
-      <p>The Taj Mahal is a white marble mausoleum in India, built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 World Wonders</p>
-  </footer>
+  <section style="margin-top: 3rem;">
+    <h2 class="section-title">Kolli Hills (Kolli Malai)</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Kolli_Hills_Mountain_View.jpg" alt="Kolli Hills" />
+        <div class="card-content">
+          <h2>Kolli Hills</h2>
+          <p>Kolli Hills, known as Kolli Malai, is a mountain range in the Eastern Ghats, famous for its 70 hairpin bends, scenic views, and the powerful Arapaleeswarar Temple. Visitors are enchanted by waterfalls like Agaya Gangai, vibrant flora, and a tranquil escape from city life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="author-section">
+    <img src="file-F6LsU8MtTB85qCprbVvwzS" alt="Created by Javagar">
+    <p>Created by Javagar</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Namakkal Temple & Tourism Board. All rights reserved.
+</footer>
+
 </body>
 </html>
